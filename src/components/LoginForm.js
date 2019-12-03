@@ -15,9 +15,12 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
+const Image = styled.img``;
+
 const LoginForm = () => {
   return (
     <FormContainer>
+      <Image src="images/logo.png" />
       <Title>Some title stuff</Title>
     </FormContainer>
   );
