@@ -1,6 +1,6 @@
 import React from "react";
-import { LoginForm } from "./components";
 
+import Routes from "./components/Routes";
 import styled from "styled-components";
 
 const ContactBanner = styled.h3`
@@ -8,19 +8,21 @@ const ContactBanner = styled.h3`
   font-family: Arvo, "Open Sans", Arial, sans-serif;
 `;
 
-const AppContainer = styled.div`
+const Nav = styled.nav`
   margin-top: 4%;
 `;
 
+const DivApp = styled.div``;
+
 const App = () => {
   return (
-    <AppContainer>
-      <LoginForm />
-
+    <DivApp>
+      <Nav />
+      <Routes />
       <ContactBanner>
         Need help? No problem! Email support@homebinder.com or Call 800-377-6915
       </ContactBanner>
-    </AppContainer>
+    </DivApp>
   );
 };
 
