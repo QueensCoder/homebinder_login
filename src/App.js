@@ -1,5 +1,6 @@
 import React from "react";
 import { LoginForm } from "./components";
+
 import styled from "styled-components";
 
 const ContactBanner = styled.h3`
@@ -15,12 +16,10 @@ const App = () => {
   return (
     <AppContainer>
       <LoginForm />
-      <h4>
-        <ContactBanner>
-          Need help? No problem! Email support@homebinder.com or Call
-          800-377-6915
-        </ContactBanner>
-      </h4>
+
+      <ContactBanner>
+        Need help? No problem! Email support@homebinder.com or Call 800-377-6915
+      </ContactBanner>
     </AppContainer>
   );
 };
