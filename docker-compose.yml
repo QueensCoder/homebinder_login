@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    build:
+      # in the event that there is no docker file look in curr dif and use
+      # specified file
+      context: .
+
+    ports:
+      - "3000:3000"
+    volumes:
+      # do not map nodemodules
+      - /app/node_modules
+
+      # map curr dir to /app
+      - .:/app
