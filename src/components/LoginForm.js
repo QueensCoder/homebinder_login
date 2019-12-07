@@ -11,6 +11,7 @@ import {
   LinksDiv,
   Hometag
 } from "./styled-components";
+import history from "../history";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -24,9 +25,13 @@ const LoginForm = () => {
       <Form
         onSubmit={evt => {
           evt.preventDefault();
+          setEmail("");
+          setPass("");
+          history.push("/home");
         }}
       >
         <EmailInput
+          className="emailinput" //used classname to make testing easier because of styled component
           placeholder="Email"
           type="email"
           value={email}

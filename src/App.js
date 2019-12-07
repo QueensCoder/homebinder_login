@@ -10,6 +10,7 @@ const ContactBanner = styled.h3`
 
 const Nav = styled.nav`
   margin-top: 4%;
+  background-color: grey;
 `;
 
 const DivApp = styled.div``;
