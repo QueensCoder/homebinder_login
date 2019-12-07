@@ -1,7 +1,7 @@
 import React from "react";
 
 const ResetPass = () => {
-  return <div>reset password</div>;
+  return <h1>reset password here</h1>;
 };
 
 export default ResetPass;
